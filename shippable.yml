@@ -10,7 +10,7 @@ go:
 build:
   ci:
     - go version
-    
+        
   cache: true  
   
   cache_dir_list:      
