@@ -5,8 +5,8 @@ language: go
 # Version number
 go:
   - 1.1
-  - 1.2
-  - 1.3
+ # - 1.2
+  #- 1.3
 
 build:
   pre_ci:
@@ -16,17 +16,14 @@ build:
     image_name: shippabledocker/shiphitchcock1_sample_go
     image_tag: latest
     pull: false
-    
-  ci:
-    - go version
  
   post_ci:
     - docker push shippabledocker/shiphitchcock1_sample_go
     
-  #cache: true
+  cache: true
   
-  #cache_dir_list:    
-   # - $SHIPPABLE_BUILD_DIR/shippable.yml 
+  cache_dir_list:    
+    - $SHIPPABLE_BUILD_DIR/shippable.yml 
 
 integrations:
   hub:
