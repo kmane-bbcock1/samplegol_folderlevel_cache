@@ -10,7 +10,7 @@ go:
 
 env:
   - FOO=Bar
-  
+    
 build:
   pre_ci:
     - docker build -t=shippabledocker/shiphitchcock1_sample_go .
