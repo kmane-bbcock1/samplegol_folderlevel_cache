@@ -10,6 +10,11 @@ go:
 build:
   ci:
     - go version
+    
+  pre_ci_boot:
+      image_name: shippable/minv2
+      image_tag: latest
+      pull: false
         
   cache: true  
   
