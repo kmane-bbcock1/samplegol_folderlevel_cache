@@ -16,7 +16,7 @@ build:
       image_tag: latest
       pull: false
         
-  #cache: true  
+  cache: true  
   
   #cache_dir_list:      
    # - $SHIPPABLE_BUILD_DIR/shippable.yml  
